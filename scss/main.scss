@@ -1,0 +1,23 @@
+@import 'config';
+@import 'header';
+@import 'home';
+@import 'responsive';
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden !important;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: arial;
+    overflow: hidden !important;
+}
