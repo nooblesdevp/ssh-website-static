@@ -84,6 +84,7 @@
 .services-grid{
     display: grid;
     position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
     .services-item{
         margin: 20px auto;
@@ -124,7 +125,8 @@
       }
 
       .services-list{
-        //overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
         margin: 10px auto;
 
             .fa-laptop{
@@ -175,14 +177,7 @@
    
 }
 .services-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 750px;
-   
-    
-
+  position: relative;
     .title{
         font-size: 3rem;
     }
@@ -210,6 +205,11 @@
             color: $text-color;
 
         }
+    }
+    .grid-service-list1{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)) !important;
+        grid-gap: 2rem;
     }
 }
 .content-text{
